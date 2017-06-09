@@ -2,7 +2,7 @@
 .header__site-name {
 	display: none;
 }
-.table {
+table {
 	display: block;
 	overflow-x: auto;
 }

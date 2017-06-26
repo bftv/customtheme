@@ -3,3 +3,11 @@ table {
 	display: block;
 	overflow-x: auto;
 }
+
+.views-field td {
+	border-top: none;
+}
+
+.views-field td a {
+	text-decoration: none;
+}

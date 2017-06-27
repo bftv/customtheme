@@ -12,3 +12,7 @@ td a {
 	text-decoration: none;
 	color: #002855;
 }
+
+.meta-info {
+	display: none;
+}

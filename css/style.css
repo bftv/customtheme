@@ -16,3 +16,7 @@ td a {
 .meta-info {
 	display: none;
 }
+
+.vm-teaser__byline {
+	display: none;
+}

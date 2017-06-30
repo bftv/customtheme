@@ -1,0 +1,23 @@
+{% extends "node.html.twig" %}
+
+{#
+/**
+ * @file
+ * Theme override for a node sf-article featured display
+ *
+ * Available variables:
+ * - Look in the node.html.twig file for available variables.
+ */
+#}
+{% block title %}{% endblock %}
+{% block submitted %}{% endblock %}
+
+{% block content %}
+  {{ parent() }}
+
+  {{ title_prefix }}
+  <h2{{ title_attributes }}>
+    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+  </h2>
+  {{ title_suffix }}
+{% endblock %}

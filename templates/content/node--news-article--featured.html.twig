@@ -13,7 +13,7 @@
 {% block submitted %}{% endblock %}
 
 {% block content %}
-  {{ parent() }}
+  {{ parent()|without('body') }}
 
   {{ title_prefix }}
   <h2{{ title_attributes }}>

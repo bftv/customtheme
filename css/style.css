@@ -4,6 +4,11 @@ table {
 	overflow-x: auto;
 }
 
+.feature-date {
+	font-size: 16px;
+	color: #555;
+}
+
 .heading--auxiliary-custom {
     font-size: 16px;
     font-size: 1rem;

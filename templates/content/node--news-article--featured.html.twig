@@ -20,4 +20,24 @@
     <a href="{{ url }}" rel="bookmark">{{ label }}</a>
   </h2>
   {{ title_suffix }}
+  <footer class="node__meta">
+    <div{{ author_attributes.addClass('node__submitted meta-info') }}>
+      {{ date }}
+    </div>
+    {{ metadata }}
+  </footer>
+  <div{{ content_attributes.addClass('vm-teaser__summary') }}>
+    {{ content|without(
+      'field_additional_information',
+      'field_bftv_news_category',
+      'field_bftv_news_document',
+      'field_sf_featured_status',
+      'field_media_contact',
+      'field_fbtv_news_for',
+      'field_sf_primary_image',
+      'field_bftv_news_source',
+      'field_sf_tags',
+      'field_url_to_link_article'
+    ) }}
+  </div>
 {% endblock %}

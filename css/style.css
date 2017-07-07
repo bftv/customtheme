@@ -10,6 +10,10 @@ table {
 	line-height: 2;
 }
 
+.byline {
+	font-size: 16px;
+}
+
 .heading--auxiliary-custom {
     font-size: 16px;
     font-size: 1rem;

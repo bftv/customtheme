@@ -101,7 +101,7 @@
         {{ author_picture }}
         <div{{ author_attributes.addClass('node__submitted') }}>
           {% if node.uid.value[0].target_id != 0 %}
-            {% trans %}Posted by {{ author_name }} on {% endtrans %}
+            {#{% trans %}Posted by {{ author_name }} on {% endtrans %}#}
           {% endif %}
           {{ date }}
           {{ metadata }}

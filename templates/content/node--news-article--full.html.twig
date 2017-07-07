@@ -23,11 +23,11 @@
     <div{{ author_attributes.addClass('node__submitted meta-info') }}>
       {{ date }}
     </div>
-    <div class="byline u-space-bottom">
+    {#<div class="byline u-space-bottom">
       {% if node.uid.value[0].target_id != 0 %}
         {% trans %}Posted by {{ author_name }}{% endtrans %}
       {% endif %}
-    </div>
+    </div>#}
     {{ metadata }}
   </footer>
 

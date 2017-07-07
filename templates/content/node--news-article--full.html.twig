@@ -21,7 +21,9 @@
 
   <footer class="node__meta">
     <div{{ author_attributes.addClass('node__submitted meta-info') }}>
-      {{ date }}
+      <div class="byline u-space-bottom">
+        Posted on: {{ date }}
+      </div>
     </div>
     {#<div class="byline u-space-bottom">
       {% if node.uid.value[0].target_id != 0 %}

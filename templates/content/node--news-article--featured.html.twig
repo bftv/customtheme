@@ -14,19 +14,8 @@
 
 {% block content %}
   {#{{ parent() }}#}
-  <div{{ content_attributes.addClass('vm-teaser__summary') }}>
-    {{ content|without(
-      'field_additional_information',
-      'field_bftv_news_category',
-      'field_bftv_news_document',
-      'field_sf_featured_status',
-      'field_media_contact',
-      'field_fbtv_news_for',
-      'body',
-      'field_bftv_news_source',
-      'field_sf_tags',
-      'field_url_to_link_article'
-    ) }}
+  <div{{ content_attributes.addClass('custom-featured-image') }}>
+    {{ content.field_sf_primary_image }}
   </div>
 
   {{ title_prefix }}

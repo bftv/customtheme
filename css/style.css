@@ -41,3 +41,7 @@ table {
     font-style: italic;
     font-weight: 700;
 }
+
+.feed-icon {
+	margin-top: .5em;
+}

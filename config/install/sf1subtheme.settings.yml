@@ -3,7 +3,7 @@ page_title:
     - sf_page
     - sf_photo_gallery
   image_field: field_sf_primary_image
-article_category_field: field_sf_article_category
+article_category_field: field_bftv_news_category
 event_category_field: field_sf_event_type
 photo_gallery_category_field: field_sf_gallery_category
 branding_field: field_sf_branding

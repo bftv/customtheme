@@ -10,6 +10,13 @@ table {
 	line-height: 2;
 }
 
+.by-line-custom {
+	font-size: 16px;
+	color: #555;
+	line-height: 2;
+	margin: .5em;
+}
+
 .custom-featured-image {
 	margin-bottom: .5em;
 }

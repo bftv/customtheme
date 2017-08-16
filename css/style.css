@@ -1,4 +1,10 @@
 /* Add CSS theme overrides here. */
+@media (min-width: 992px) {
+	.primary-nav a {
+		padding: 0 0.5em 0 1em;
+	}
+}
+
 table {
 	display: block;
 	overflow-x: auto;

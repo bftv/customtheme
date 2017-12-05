@@ -12,7 +12,7 @@ function sf1subtheme_preprocess_html(array &$variables) {
   // Add class to html tag
 
 //  $variables['html_attributes']->addClass('no-js');
-header_remove('X-Frame-Options');
+$request->headers->remove('X-Frame-Options');
 }
 
 /**

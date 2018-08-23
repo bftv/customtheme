@@ -1,32 +1,25 @@
 {% extends "node--teaser.html.twig" %}
 
+{% block content %}
 
-{{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
-  {% if content.field_sf_primary_image|render %}
-    <div class="o-media__figure vm-teaser__figure category-brand__thumbnail">
-      {{ content.field_sf_primary_image }}
-    </div>
-  {% endif %}
-  <div class="o-media__body">
-    {{ title_prefix }}
-    <h3{{ title_attributes.addClass('vm-teaser__title') }}><a href="#">{{ label }}</a></h3>
-    {{ title_suffix }}
+{% if content.field_sf_person_reference | render %}
+<p><strong>Project lead: </strong>{{  content.field_sf_person_reference  }}</p>
+{% endif %}
 
-    {% if display_submitted %}
-      <footer class="vm-teaser__byline">
-        {{ metadata }}
-        {% if node.uid.value[0].target_id != 0 %}
-          <span class="byline">{% trans %}Posted by {{ author_name }} on {% endtrans %}</span>
-        {% endif %}
-        <span>{{ date }}</span>
-      </footer>
-    {% endif %}
-    {% block content %}
-      <div{{ content_attributes.addClass('vm-teaser__summary') }}>
-        {{ content|without('links', 'field_sf_primary_image', 'field_sf_featured_status') }}
-      </div>
-    {% endblock %}
+<div{{ content_attributes.addClass('vm-teaser__summary') }}>
+    {{ content|without(
+      'field_sf_article_type',
+      'field_sf_article_category',
+      'field_sf_primary_image',
+      'field_sf_person_reference',
+      'field_sf_tags',
+      'field_website',
+      'body'
+    ) }}
   </div>
 
-</article>
+{% if content.field_website | render %}
+<p>{{  content.field_website  }}</p>
+{% endif %}
+
+{% endblock %}

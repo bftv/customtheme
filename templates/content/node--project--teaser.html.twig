@@ -1,10 +1,7 @@
 {% extends "node--teaser.html.twig" %}
 
-{{ title_prefix }}
-    <h3{{ title_attributes.addClass('vm-teaser__title') }}><a href="{{ url }}" rel="bookmark">{{ label }}</a></h3>
-    {{ title_suffix }}
-
 {% block content %}
+<h3{{ title_attributes.addClass('vm-teaser__title') }}><a href="#" rel="bookmark">{{ content.label }}</a></h3>
 
 {% if content.field_sf_person_reference | render %}
 {{  content.field_sf_person_reference  }}

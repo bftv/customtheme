@@ -1,7 +1,10 @@
 {% extends "node--teaser.html.twig" %}
 
-{% block content %}
+{% block header %}
 <h3{{ title_attributes.addClass('vm-teaser__title') }}><a href="#" rel="bookmark">{{ label }}</a></h3>
+{% endblock %}
+
+{% block content %}
 
 {% if content.field_sf_person_reference | render %}
 {{  content.field_sf_person_reference  }}

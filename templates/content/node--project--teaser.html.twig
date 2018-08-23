@@ -3,7 +3,7 @@
 {% block content %}
 
 {% if content.field_sf_person_reference | render %}
-<p><strong>Project lead: </strong>{{  content.field_sf_person_reference  }}</p>
+<p>{{  content.field_sf_person_reference  }}</p>
 {% endif %}
 
 <div{{ content_attributes.addClass('vm-teaser__summary') }}>

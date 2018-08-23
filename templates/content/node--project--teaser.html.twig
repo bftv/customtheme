@@ -1,7 +1,7 @@
 {% extends "node--teaser.html.twig" %}
 
 {% block header %}
-<h3{{ title_attributes.addClass('vm-teaser__title') }}><a href="{{ content.field_website.uri }}" rel="bookmark">{{ label }}</a></h3>
+<h3{{ title_attributes.addClass('vm-teaser__title') }}><a href="{{ content.field_website[0]['#url'] }}" rel="bookmark">{{ label }}</a></h3>
 {% endblock %}
 
 {% block content %}

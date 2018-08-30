@@ -82,7 +82,9 @@
 <article{{ attributes.addClass(classes) }}>
   {% if content.field_sf_primary_image|render %}
     <div class="o-media__figure vm-teaser__figure category-brand__thumbnail">
+     {% block primaryimage %} 
       {{ content.field_sf_primary_image }}
+     {% endblock %} 
     </div>
   {% endif %}
   <div class="o-media__body">

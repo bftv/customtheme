@@ -1,5 +1,9 @@
 {% extends "node--teaser.html.twig" %}
 
+{% block primaryimage %}
+<a href="{{ content.field_website[0]['#url'] }}" rel="bookmark">{{ content.field_sf_primary_image }}</a>
+{% endblock %}
+
 {% block header %}
 <h3{{ title_attributes.addClass('vm-teaser__title') }}><a href="{{ content.field_website[0]['#url'] }}" rel="bookmark">{{ label }}</a></h3>
 {% endblock %}
